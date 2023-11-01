@@ -3,93 +3,319 @@
 <head> 
     <meta charset="UTF-8"> 
     <link rel="icon" href="res/images/favicon.ico"> 
-    <title>My Dashboard</title> 
+    <title>EEK-2</title> 
 </head> 
 <body> 
     <header> 
-        <strong>Welcome to your dashboard!</strong> 
+        <strong>Emotsionaalse enesetunde küsimustik (EEK-2)</strong> 
     </header>
     <section> 
-        <div> 
-            <img src="res/images/me.png" alt="My picture"> 
+        <div>
+Allikas: Aluoja et al. 1999. Emotsionaalse enesetunde küsimustik EEK-2.
+<br>
+Lugege tähelepanelikult läbi alltoodud loetelu probleemidest ja vaevustest, mis
+vaõivad inimestel mõnikord esineda. Tõmmake ring ümber sellele vastusevariandile, mis kõige paremini kirjeldab seda, KUIVÕRD SEE PROBLEEM ON
+TEID HÄIRINUD VIIMASE KUU VÄLTEL. 0 - Üldse mitte, 1 - Harva, 2 - Mõnikord, 3 - Sageli, 4 - Pidevalt
+<br><br>
         </div> 
-        <div> 
-            <ul> 
-                <li>John Doe</li> 
-                <li>27/06/1993</li> 
-                <li>Software Engineering</li> 
-            </ul> 
-        </div> 
-        <div> 
-            <strong>2.65</strong> 
-        </div> 
-    </section> 
-    <section> 
-        <h1>Courses</h1> 
-        <table> 
-            <thead> 
-            <tr> 
-                <th>#</th> 
-                <th>Course Title</th> 
-                <th>Semester</th> 
-                <th>Grade</th> 
-            </tr> 
-            </thead> 
-            <tbody> 
-            <tr> 
-                <td>1</td> 
-                <td><a target="_blank" href="https://courses.cs.ut.ee/2016/asd/fall/Main">Agile software development</a></td> 
-                <td>1</td> 
-                <td>82</td> 
-            </tr> 
-            <tr> 
-                <td>2</td> 
-                <td><a target="_blank" href="https://courses.cs.ut.ee/2009/sm/">System modeling</a></td> 
-                <td>1</td> 
-                <td>85</td> 
-            </tr> 
-            <tr> 
-                <td>3</td> 
-                <td><a target="_blank" href="https://courses.cs.ut.ee/2018/OOP/spring">Object-oriented programming</a></td> 
-                <td>2</td> 
-                <td>99</td> 
-            </tr> 
-            <tr> 
-                <td>4</td> 
-                <td><a target="_blank" href="https://courses.cs.ut.ee">language Level A2</a></td> 
-                <td>2</td> 
-                <td>65</td> 
-            </tr> 
-            </tbody> 
-            <tfoot>
-                <tr>
-                    <td colspan="2">
-                        <button>Add new course</button>
-                    </td>
-                </tr>
-                <tr></tr>
-            </tfoot>
-        </table> 
-        <form action="">
-            <input type="text" placeholder="course title" name="title" id="">
-            <select name="semester" id="">
-                <option value="semester 1 fall">semester 1 fall</option>
-                <option value="semester 1 spring">semester 1 spring</option>
-                <option value="semester 2 fall">semester 2 fall</option>
-                <option value="semester 2 spring">semester 2 spring</option>
+        <form name="eek2Form" id="eek2Form" action="">
+            1. Kurvameelsus 
+            <select name="0-4" id="1">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
             </select>
-            <input type="number" min="0" max="100" placeholder="grade" name="grade">
-        </form>
+            <br>
+            2. Huvi kadumine  
+            <select name="0-4" id="2">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            3. Alaväärsustunne 
+            <select name="0-4" id="3">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            4. Enesesüüdistused 
+            <select name="0-4" id="4">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            5. Korduvad surma- või enesetapumõtted 
+            <select name="0-4" id="5">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            6. Üksildustunne
+            <select name="0-4" id="6">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            7. Lootusetus tuleviku suhtes
+            <select name="0-4" id="7">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            8. Võimetus rõõmu tunda 
+            <select name="0-4" id="8">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            9. Kiire ärritumine või vihastamine 
+            <select name="0-4" id="9">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            10. Ärevuse- või hirmutunne 
+            <select name="0-4" id="10">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            11. Pingetunne või võimetus lõdvestuda 
+            <select name="0-4" id="11">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            12. Liigne muretsemine paljude asjade pärast 
+            <select name="0-4" id="12">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            13. Rahutus või kärsitus, nii et ei suuda paigal püsida  
+            <select name="0-4" id="13">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            14. Kergesti ehmumine 
+            <select name="0-4" id="14">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            15. Äkilised paanikahood, mille ajal esinevad
+südamekloppimine, õhupuudus, minestamistunne või
+muud hirmutavad kehalised nähud 
+            <select name="0-4" id="15">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            16. Kartus viibida üksi kodust eemal 
+            <select name="0-4" id="16">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            17. Hirmutunne avalikes kohtades või tänavatel 
+            <select name="0-4" id="17">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            18. Kartus minestada rahva hulgas 
+            <select name="0-4" id="18">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            19. Kartus sõita bussi, trammi, rongi või autoga 
+            <select name="0-4" id="19">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            20. Hirm olla tähelepanu keskpunktis 
+            <select name="0-4" id="20">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            21. Hirm suhtlemisel võõraste inimestega 
+            <select name="0-4" id="21">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            22. Loidus- või väsimustunne 
+            <select name="0-4" id="22">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            23. Vähenenud tähelepanu- või keskendumisvõime 
+            <select name="0-4" id="23">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            24. Puhkamine ei taasta jõudu 
+            <select name="0-4" id="24">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            25. Kiire väsimine 
+            <select name="0-4" id="25">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            26. Uinumisraskused 
+            <select name="0-4" id="26">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            27. Rahutu või katkendlik uni 
+            <select name="0-4" id="27">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+            28. Liigvarajane ärkamine
+            <select name="0-4" id="28">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=0>0</option>
+            </select>
+            <br>
+        <button type="submit">Valmis</button>ˇ
+    </form>
+    <p id="log"></p>
     </section>
-    <footer> 
-        <ul> 
-            <li> 
-                <a target="_blank" href="https://ois2.ut.ee/">OIS</a> 
-            </li> 
-            <li> 
-                <a target="_blank" href="https://courses.cs.ut.ee/">Courses</a> 
-            </li> 
-        </ul> 
-    </footer> 
 </body> 
+<script>
+    const form = document.getElementById("eek2Form");
+    const log = document.getElementById("log");
+    const vastused = document.forms["eek2Form"].getElementsByTagName("select");
+    console.log(vastused)
+    function logSubmit(event) {
+        event.preventDefault();
+        //DEPR SKOOR 1 - 8
+        let depr = 0;
+        for (let i = 0; i < 8; i++) {
+            depr += parseInt(vastused[i].value);
+        }
+        //ärev SKOOR 9 - 14
+        let arev = 0;
+        for (let i = 8; i < 14; i++) {
+            arev += parseInt(vastused[i].value);
+        }
+        //ast SKOOR 22 -25
+        let ast = 0;
+        for (let i = 14; i < 19; i++) {
+            ast += parseInt(vastused[i].value);
+        }
+        //paan SKOOR 15 - 19
+        let paan = 0;
+        for (let i = 14; i < 19; i++) {
+            paan += parseInt(vastused[i].value);
+        }
+        //sots SKOOR 20 - 21
+        let sots = parseInt(vastused[19].value) + parseInt(vastused[20].value);
+        //une SKOOR 26 - 28
+        let une = parseInt(vastused[25].value) + parseInt(vastused[26].value) + parseInt(vastused[27].value);
+
+        log.textContent = `DEP (>11!): ${depr}.\n\nSoodumused üldise ärevushäire suhtes (>11!): ${arev}. Soodumused paani-
+kahäire ja agorafoobia (>6!): ${paan}. sotsiaalfoobia suhtes (>3!): ${sots}. Soodumused asteenia suhtes (>6!): ${ast}. Soodumused
+depressiooni ja ärevusega kaasuvate võimalike unehäirete suhtes (>5!): ${une}.`;
+    }
+
+    form.addEventListener("submit", logSubmit);
+
+</script>
 </html> 
